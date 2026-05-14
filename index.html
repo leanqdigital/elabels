@@ -550,9 +550,12 @@ ul{list-style:none}
   background:var(--text-2);flex-shrink:0;
 }
 .revolution-h2{
-  font-size:clamp(40px,6.5vw,96px);
+  font-size:clamp(40px,6.5vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.88;
-  color:var(--text);max-width:16ch;
+  color:var(--text);
+  max-width:709px;
+  line-height: 56px;
+
 }
 .revolution-sub{
   font-size:clamp(15px,1.2vw,18px);line-height:1.6;color:var(--text-2);
@@ -597,11 +600,11 @@ ul{list-style:none}
   gap:24px;margin-bottom:clamp(36px,5vw,64px);flex-wrap:wrap;
 }
 .series-h2{
-  font-size:clamp(40px,6.5vw,96px);
+  font-size:clamp(40px,6.5vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.88;color:var(--text);
 }
 .series-sub{
-  font-size:15px;color:var(--text-2);max-width:280px;text-align:right;line-height:1.55;font-weight:400;
+  font-size:18px;color:var(--text-2);max-width:280px;text-align:right;line-height:1.55;font-weight:400;
 }
 /* Bento grid */
 .series-grid{
@@ -653,7 +656,7 @@ ul{list-style:none}
 }
 /* Pill tag */
 .bento-tag{
-  display:inline-flex;align-items:center;gap:5px;
+  display:inline;align-items:center;gap:5px;
   font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   color:rgba(255,255,255,.9);
   background:rgba(255,255,255,.12);
@@ -661,6 +664,7 @@ ul{list-style:none}
   backdrop-filter:blur(8px);
   padding:4px 11px;border-radius:100px;
   margin-bottom:clamp(10px,1.5vw,16px);
+  width: fit-content;
 }
 .bento-tag-dot{
   width:5px;height:5px;border-radius:50%;flex-shrink:0;
@@ -673,12 +677,13 @@ ul{list-style:none}
 .bento-name{
   font-size:clamp(18px,2.2vw,30px);font-weight:700;
   color:#fff;letter-spacing:-.03em;line-height:1.05;margin-bottom:6px;
+  margin-top: 16px
 }
-.bento-esl .bento-name{font-size:clamp(24px,3.2vw,44px)}
+.bento-esl .bento-name{font-size:clamp(24px,3.2vw,28px); margin-top: 16px;}
 /* Description */
 .bento-desc{
   font-size:clamp(12px,.95vw,14px);
-  color:rgba(255,255,255,.6);line-height:1.5;font-weight:400;
+  color:#FFFFFF;line-height:1.5;font-weight:400;
 }
 .bento-esl .bento-desc{max-width:340px}
 /* Accessories pill strip */
@@ -688,7 +693,7 @@ ul{list-style:none}
 }
 .bento-acc-pill{
   font-size:11px;font-weight:600;letter-spacing:.02em;
-  color:#070707;
+  color:#FFFFFF;
   background:rgba(255,255,255,.07);
   border:1px solid rgba(255,255,255,.1);
   padding:5px 12px;border-radius:100px;
@@ -710,7 +715,7 @@ ul{list-style:none}
   margin-bottom:clamp(32px,5vw,52px);
 }
 .shelf-h2{
-  font-size:clamp(48px,8vw,120px);
+  font-size:clamp(48px,8vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.88;color:var(--text);
 }
 .shelf-carousel{
@@ -789,7 +794,7 @@ ul{list-style:none}
 .stats-kicker .section-eyebrow{color:rgba(255,255,255,.4)}
 .stats-kicker .section-eyebrow::before{background:rgba(255,255,255,.4)}
 .stats-kicker .series-h2{
-  font-size:clamp(40px,6.5vw,96px);
+  font-size:clamp(40px,6.5vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.88;
   color:#FFFFFF;
 }
@@ -805,13 +810,13 @@ ul{list-style:none}
 .stat-col:first-child{padding-left:0}
 .stat-col:last-child{border-right:none}
 .stat-num{
-  font-size:clamp(52px,7vw,96px);
+  font-size:clamp(52px,7vw,48px);
   font-weight:700;letter-spacing:-.05em;line-height:.88;
   color:var(--yellow);
   white-space: nowrap;
 }
 .stat-unit{font-size:.38em;letter-spacing:.02em;font-weight:600;vertical-align:baseline;margin-left:4px;color:rgba(255,255,255,.5)}
-.stat-label{font-size:13px;color:rgba(255,255,255,.45);line-height:1.5;font-weight:400;max-width:160px}
+.stat-label{font-size:14px;color:rgba(255,255,255,.45);line-height:1.5;font-weight:400;max-width:160px}
 
 /* ══════════════════════════════════════════════
    PLATFORM / FEATURES
@@ -824,7 +829,7 @@ ul{list-style:none}
 .platform-inner{max-width:var(--max-w);margin:0 auto}
 .platform-head{margin-bottom:clamp(40px,6vw,72px)}
 .platform-h2{
-  font-size:clamp(40px,6.5vw,96px);
+  font-size:clamp(40px,6.5vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.88;
   color:var(--text);margin-bottom:16px;
 }
@@ -873,7 +878,7 @@ ul{list-style:none}
   background:var(--text-2);flex-shrink:0;
 }
 .res-h2{
-  font-size:clamp(36px,5vw,64px);
+  font-size:clamp(36px,5vw,48px);
   font-weight:700;letter-spacing:-.03em;line-height:.92;
   color:var(--text-1);
 }
@@ -939,12 +944,12 @@ ul{list-style:none}
 }
 .compare-eyebrow::before{content:'';display:inline-block;width:20px;height:1.5px;background:rgba(255,255,255,.35);flex-shrink:0}
 .compare-h2{
-  font-size:clamp(36px,5.5vw,80px);
+  font-size:clamp(36px,5.5vw,48px);
   font-weight:700;letter-spacing:-.04em;line-height:.9;
   color:#fff;margin-bottom:clamp(16px,2vw,20px);
 }
 .compare-sub{
-  font-size:clamp(14px,1.1vw,17px);color:rgba(255,255,255,.38);
+  font-size:clamp(14px,1.1vw,18px);color:rgba(255,255,255,.38);
   line-height:1.6;font-weight:400;max-width:480px;margin:0 auto;
 }
 /* Scrollable wrapper */
@@ -1611,7 +1616,8 @@ ul{list-style:none}
 <footer id="footer" aria-label="Site footer">
   <div class="footer-grid">
     <div class="footer-brand-col">
-      <div class="footer-logo wordmark--dark"><span class="wm-e">e</span><span class="wm-l">labels</span></div>
+      <!-- create a img tag -->
+       <img src="images/footer-logo.png" alt="Elabels logo" class="nav-logo">
       <p class="footer-tagline">Smart Labels. Smarter Stores.<br>Australian-owned end-to-end ESL systems for modern retail.</p>
     </div>
     <nav aria-label="Products">
